@@ -18,3 +18,39 @@ export type UserType = {
   createdAt: string;
   updatedAt: string;
 };
+
+export interface File {
+  fieldname: string;
+  originalname: string;
+  encoding: string;
+  mimetype: string;
+  path: string;
+  destination: string;
+  filename: string;
+  size: number;
+}
+
+export interface imageFiles {
+  coverImage: File[];
+  images: File[];
+}
+
+export interface Query {
+  category?: string;
+  userId?: string;
+  minPrice?: string;
+  maxPrice?: string;
+  search?: string;
+}
+export interface Filters {
+  category?: string;
+  user?: string;
+  packagePrice?: {
+    $gte?: number;
+    $lte?: number;
+  };
+  title?: {
+    $regex?: string;
+    $options?: string;
+  };
+}
