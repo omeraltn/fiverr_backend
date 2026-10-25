@@ -46,7 +46,7 @@ const login = catchAsync(
     });
 
     //kullanıcı bulunamazsa
-    if (!user) throw new Unauthorized("Giriş bilgileri hatalı 1");
+    if (!user) throw new Unauthorized("Giriş bilgileri hatalı");
 
     // veritabanında hashli saklanan şifre ile body kısmında normal gönderilen şifre karşılaştır
     const isPasswordCorrect = bcrypt.compareSync(
@@ -55,7 +55,7 @@ const login = catchAsync(
     );
 
     // şifre yanlışsa ise
-    if (!isPasswordCorrect) throw new Unauthorized("Giriş bilgileri hatalı 2");
+    if (!isPasswordCorrect) throw new Unauthorized("Giriş bilgileri hatalı");
 
     // jwt tokeni oluştur
     const token = jwt.sign(
