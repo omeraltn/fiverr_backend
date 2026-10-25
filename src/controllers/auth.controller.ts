@@ -70,8 +70,8 @@ const login = catchAsync(
     res
       .cookie("token", token, {
         httpOnly: true,
-        secure: isProduction,
-        sameSite: "lax",
+        secure: true,
+        sameSite: "none",
         expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
       })
       .json({ message: "Oturumunuz açıldı.", user });
