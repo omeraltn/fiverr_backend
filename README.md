@@ -15,6 +15,6 @@ Freelance hizmetlerin listelenmesini ve keşfedilmesini sağlayan platformun bac
 
 Node.js, TypeScript, Express 5, MongoDB, Mongoose, JWT, bcrypt, Multer, Cloudinary, dotenv ve express-rate-limit.
 
-## Proje Link:
+## Proje Linki
 
-https://peyvdar.com
+[![Peyvdar](https://img.shields.io/badge/Website-peyvdar.com-0f5132?style=for-the-badge)](https://peyvdar.com)
