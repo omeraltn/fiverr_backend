@@ -14,3 +14,7 @@ Freelance hizmetlerin listelenmesini ve keşfedilmesini sağlayan platformun bac
 ## Teknolojiler
 
 Node.js, TypeScript, Express 5, MongoDB, Mongoose, JWT, bcrypt, Multer, Cloudinary, dotenv ve express-rate-limit.
+
+## Proje Link:
+
+https://peyvdar.com
